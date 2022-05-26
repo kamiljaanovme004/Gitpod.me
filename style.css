@@ -1,0 +1,751 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Roboto400';
+    src: url(./Fonts/Roboto-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Roboto700';
+    src: url(./Fonts/Roboto-Bold.ttf);
+    font-weight: 700;
+}
+
+body {
+    background-color: #F5F3F4;
+}
+
+header {
+    width: 100%;
+    min-height: 100vh;
+}
+
+header nav {
+    width: 100%;
+    padding: 0 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    position: relative;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin: 0 24px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 24px;
+    font-family: 'Roboto400';
+    color: #12100CB2;
+    transition: 0.5s ease;
+}
+
+header nav ul li a:hover {
+    color: #FF8A00;
+    transition: 0.5s ease;
+}
+
+header nav .nav-btn {
+    text-decoration: none;
+    color: #F9F9F9;
+    padding: 6px 22px 6px 22px;
+    background-color: #12100C;
+    font-family: 'Roboto400';
+    font-size: 14px;
+    line-height: 20px;
+    border-radius: 12px;
+    transition: 0.5s ease;
+}
+
+header nav .nav-btn:hover {
+    box-shadow: 5px 10px 5px #12100c45;
+    transition: 0.5s ease;
+}
+
+.hero {
+    width: 100%;
+    padding: 0 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+}
+
+.hero-image {
+    width: 45%;
+    margin-top: 52px;
+}
+
+.hero .hero-info h1 {
+    font-size: 80px;
+    line-height: 88px;
+    color: #12100C;
+    font-family: 'Roboto700';
+    margin-bottom: 38px;
+}
+
+.hero .hero-info h5 {
+    font-family: 'Roboto400';
+    font-size: 23px;
+    line-height: 32px;
+    color: #12100CB2;
+    margin-bottom: 48px;
+}
+
+.hero .hero-info .btn-hero {
+    display: flex;
+    align-items: center;
+}
+
+.hero .hero-info .btn-hero a {
+    text-decoration: none;
+    color: #12100C;
+    background-color: #FFAE33;
+    font-size: 18px;
+    line-height: 22.5px;
+    font-family: 'Roboto700';
+    margin-right: 24px;
+    padding: 12px 46px 12px 46px;
+    border-radius: 16px;
+    transition: 0.5s ease;
+}
+
+.hero .hero-info .btn-hero a:hover {
+    box-shadow: 0px 0px 10px #FFAE33;
+    text-shadow: 0px 0px 10px #F9F9F9;
+    transition: 0.5s ease;
+}
+
+.hero .hero-info .btn-hero p {
+    font-family: 'Roboto400';
+    font-size: 16px;
+    line-height: 24px;
+    color: #12100CB2;
+}
+
+.hero .hero-info .git {
+    display: flex;
+    gap: 30px;
+    margin-top: 18px;
+}
+
+
+
+
+.trouble {
+    width: 100%;
+    padding: 200px 0;
+}
+
+.trouble h3 {
+    font-size: 5vw;
+    color: #12100C;
+    font-family: 'Roboto700';
+    text-align: center;
+}
+
+.trouble h3 del {
+    font-family: 'Roboto400' !important;
+    font-weight: lighter !important;
+    color: #999795;
+}
+
+
+
+
+
+
+.dev {
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 5% 200px;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.dev .dev-info h1 {
+    font-size: 32px;
+    line-height: 40px;
+    color: #12100C;
+    font-family: 'Roboto700';
+    margin-bottom: 8px;
+}
+
+.dev .dev-info p {
+    font-size: 24px;
+    line-height: 31.92px;
+    color: #12100CB2;
+    margin-bottom: 151px;
+}
+
+.dev img {
+    width: 500px;
+}
+
+.dev .dev-info .dev-btns {
+    display: flex;
+    gap: 16px;
+}
+
+.dev .dev-info .dev-btns a:nth-child(1) {
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 16px;
+    padding: 7px 18px 9px 18px;
+    color: #12100C;
+    font-family: 'Roboto700';
+    background-color: #FFAE33;
+    border-radius: 10.5px;
+    transition: 0.5s ease;
+}
+
+.dev .dev-info .dev-btns a:nth-child(1):hover {
+    box-shadow: 0px 0px 10px #FFAE33;
+    text-shadow: 0px 0px 10px #F9F9F9;
+    transition: 0.5s ease;
+}
+
+.dev .dev-info .dev-btns a:nth-child(2) {
+    text-decoration: none;
+    font-size: 14px;
+    font-family: 'Roboto700';
+    line-height: 16px;
+    padding: 7px 24px 9px 24px;
+    color: #12100C;
+    background-color: #FFB0AE;
+    border-radius: 10.5px;
+    transition: 0.5s ease;
+}
+
+.dev .dev-info .dev-btns a:nth-child(2):hover {
+    box-shadow: 0px 0px 10px #FFB0AE;
+    text-shadow: 0px 0px 10px #F9F9F9;
+    transition: 0.5s ease;
+}
+
+
+.flask {
+    width: 100%;
+    padding: 100px 5%;
+}
+
+.flask h1 {
+    font-size: 5vw;
+    line-height: 71.82px;
+    color: #12100C;
+    font-family: 'Roboto700';
+    text-align: center;
+    margin-bottom: 47px;
+}
+
+.flask .flask-image {
+    width: 100%;
+    margin-bottom: 49px;
+}
+
+.flask p {
+    font-size: 2.3vw;
+    line-height: 31.92px;
+    text-align: center;
+    font-family: 'Roboto400';
+    margin-bottom: 45px;
+}
+
+.flask .browsers {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    column-gap: 16px;
+}
+
+.comment-sec {
+    width: 100%;
+    padding: 200px 5%;
+}
+
+.comment-sec h1 {
+    font-family: 'Roboto700';
+    font-size: 5vw;
+    line-height: 63.72px;
+    color: #12100C;
+    text-align: center;
+    margin-bottom: 57px;
+}
+
+.comment-sec .comments {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.comment-sec .comments .comment {
+    background-color: #FFFFFF;
+    padding: 25px;
+    border-radius: 16px;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.comment-sec .comments .comment:hover {
+    box-shadow: 15px 15px 10px rgb(200, 200, 200);
+    transition: 0.5s ease;
+}
+
+.comment-sec .comments p {
+    font-size: 16px;
+    line-height: 24px;
+    font-family: 'Roboto400';
+    margin-bottom: 14px;
+}
+
+.comment-sec .comments .comment .profile {
+    display: flex;
+    gap: 12px;
+}
+
+.comment-sec .comments .comment .profile img {
+    width: 48px;
+    height: 48px;
+}
+
+.comment-sec .comments .comment .profile h2 {
+    font-size: 16px;
+    line-height: 24px;
+    font-family: 'Roboto700';
+    margin-bottom: 8px;
+}
+
+.comment-sec .techniques {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 150px 0 0;
+}
+
+.comment-sec .techniques img {
+    filter: contrast(0);
+    cursor: pointer;
+    transition: 0.1s linear;
+}
+
+.comment-sec .techniques img:hover {
+    filter: contrast(1);
+    transition: 0.1s linear;
+}
+
+.how-to {
+    width: 100%;
+    padding: 100px 5%;
+}
+
+.how-to h1 {
+    font-size: 54px;
+    font-family: 'Roboto700';
+    line-height: 71.82px;
+    color: #12100C;
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.how-to .cards {
+    display: flex;
+    justify-content: center;
+    gap: 26px;
+}
+
+.how-to .cards img {
+    width: 600px;
+}
+
+footer {
+    padding: 47px 15% 33px;
+    background-color: #F9F9F9;
+}
+
+footer .foot-items {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 47px;
+    border-bottom: 1px #ECE7E5 solid;
+}
+
+footer .foot-items .foot-column {
+    display: flex;
+    flex-direction: column;
+    row-gap: 7px;
+}
+
+footer .foot-items .foot-column h1 {
+    font-size: 13px;
+    font-family: 'Roboto700';
+    line-height: 19.5px;
+    color: #12100C;
+}
+
+footer .foot-items .foot-column a {
+    text-decoration: none;
+    color: #12100CB2;
+    font-size: 13px;
+    line-height: 19.5px;
+    font-family: 'Roboto400';
+    transition: 0.1s linear;
+}
+
+footer .foot-items .foot-column a:hover {
+    text-decoration: underline;
+    transition: 0.1s linear;
+}
+
+footer .copyright {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px 0 0;
+}
+
+footer .copyright h2 {
+    font-size: 13px;
+    line-height: 19.5px;
+    color: #12100CB2;
+    font-family: 'Roboto400';
+    display: flex;
+    align-items: center;
+    column-gap: 9px
+}
+
+footer .copyright .social-icons {
+    display: flex;
+    gap: 16px;
+}
+
+#check {
+    display: none;
+}
+
+header nav label {
+    display: none;
+    order: 1;
+}
+
+#check:checked~ul {
+    left: 0;
+}
+
+@media screen and (max-width:1329px) {
+    .dev .dev-info h1 {
+        font-size: 28px;
+        line-height: 35px;
+    }
+
+    .dev .dev-info p {
+        font-size: 20px;
+        line-height: 25px;
+    }
+}
+
+@media screen and (max-width: 1210px) {
+    .dev .dev-info h1 {
+        font-size: 23px;
+        line-height: 30px;
+    }
+
+    .dev .dev-info p {
+        font-size: 17px;
+        line-height: 20px;
+    }
+
+    .dev .dev-info .dev-btns a:nth-child(1) {
+        padding: 5px 15px 7px 15px;
+        font-size: 12px;
+    }
+
+    .dev .dev-info .dev-btns a:nth-child(2) {
+        padding: 5px 20px 7px 20px;
+        font-size: 12px;
+    }
+
+    .dev img {
+        width: 450px;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    .dev {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .dev .dev-info .dev-btns {
+        justify-content: center;
+    }
+
+    .dev .dev-info h1 {
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    .dev .dev-info p {
+        font-size: 24px;
+        line-height: 31.92px;
+    }
+
+    .dev img {
+        width: 500px;
+    }
+
+    .dev .dev-info .dev-btns a:nth-child(1) {
+        font-size: 14px;
+        line-height: 16px;
+        padding: 7px 18px 9px 18px;
+    }
+
+    .dev .dev-info .dev-btns a:nth-child(2) {
+        font-size: 14px;
+        line-height: 16px;
+        padding: 7px 24px 9px 24px;
+    }
+}
+
+@media screen and (max-width:1050px) {
+    header nav {
+        padding: 0 3%;
+    }
+
+    header nav ul li {
+        margin: 0 14px;
+    }
+}
+.flask h1{
+   line-height: 50px;
+}
+.flask p{
+    line-height: 28px;
+}
+
+@media screen and (max-width: 1110px) {
+    header .hero .hero-info h1 {
+        font-size: 70px;
+        line-height: 77px;
+    }
+
+    .hero .hero-info h5 {
+        font-size: 18px;
+        line-height: 25px;
+    }
+}
+
+@media screen and (max-width: 976px) {
+    header .hero .hero-info h1 {
+        font-size: 60px;
+        line-height: 67px;
+    }
+
+    .hero .hero-info h5 {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .hero .hero-info .btn-hero a {
+        font-size: 16px;
+        padding: 10px 40px 10px 40px;
+        line-height: 18px;
+    }
+}
+
+@media screen and (max-width: 875px) {
+    header nav ul {
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.5);
+        position: absolute;
+        backdrop-filter: blur(10px);
+        width: 50%;
+        height: 80vh;
+        border-top: #FFAE33 2px solid;
+        border-right: #FFAE33 2px solid;
+        border-bottom: #FFAE33 2px solid;
+        top: 80px;
+        box-shadow: 5px 5px 10px #FFAE33;
+        justify-content: center;
+        align-items: center;
+        row-gap: 30px;
+        left: -100%;
+        transition: 1s ease;
+    }
+
+    header nav ul li a {
+        font-size: 20px;
+        color: white;
+    }
+
+    #check {
+        display: none;
+    }
+
+    header nav label {
+        display: block;
+        width: 50px;
+    }
+
+    header nav .nav-btn {
+        padding: 6px 40px 6px 40px;
+        font-size: 16px;
+        line-height: 25px;
+    }
+}
+
+@media screen and (max-width:839px) {
+    .hero {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .hero-image {
+        width: 60%;
+    }
+
+    .hero .hero-info .btn-hero {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+
+    .hero .hero-info .git {
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .hero .hero-info .btn-hero a {
+        padding: 12px 60px 12px 60px;
+        margin-right: 0px;
+    }
+}
+
+@media screen and (max-width: 740px) {
+    .dev .dev-info h1 {
+        font-size: 23px;
+        line-height: 30px;
+    }
+    .flask h1{
+        line-height: 30px;
+     }
+   .flask .browsers img{
+       width: 30%;
+   }
+     .flask p{
+         line-height: 30px;
+     }
+
+    .dev .dev-info p {
+        font-size: 17px;
+        line-height: 20px;
+    }
+
+    .dev .dev-info .dev-btns a:nth-child(1) {
+        padding: 5px 15px 7px 15px;
+        font-size: 12px;
+    }
+
+    .dev .dev-info .dev-btns a:nth-child(2) {
+        padding: 5px 20px 7px 20px;
+        font-size: 12px;
+    }
+
+    .dev img {
+        width: 450px;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .comment-sec h1{
+        line-height: 30px;
+        margin-bottom: 30px;
+     }
+     .flask h1{
+        line-height: 25px;
+        margin-bottom: 30px;
+     }
+     .flask p{
+         line-height: 18px;
+     }
+
+
+     .flask .flask-image {
+         margin-bottom: 30px;
+     }
+
+    .dev .dev-info h1 {
+        font-size: 20px;
+        line-height: 25px;
+    }
+
+    .dev .dev-info p {
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    .dev .dev-info .dev-btns a:nth-child(1) {
+        padding: 5px 15px 7px 15px;
+        font-size: 10px;
+    }
+
+    .dev .dev-info .dev-btns a:nth-child(2) {
+        padding: 5px 20px 7px 20px;
+        font-size: 10px;
+    }
+
+    .dev img {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 450px) {
+    .hero-image {
+        width: 70%;
+    }
+    .comment-sec .comments p{
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    header nav ul {
+        width: 70%;
+    }
+    .comment-sec .comments .comment .profile h2{
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    header nav label {
+        width: 40px;
+    }
+
+    header nav .nav-btn {
+        padding: 6px 22px 6px 22px;
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    header .hero .hero-info h1 {
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    .hero .hero-info h5 {
+        font-size: 14px;
+        line-height: 16px;
+    }
+}
